@@ -1,3 +1,4 @@
+//문자열 돌리기
 const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
@@ -7,10 +8,11 @@ const rl = readline.createInterface({
 let input = [];
 
 rl.on("line", function (line) {
-  input = line.split(" ");
+  input = [line];
 }).on("close", function () {
-  console.log("a =", Number(input[0]));
-  console.log("b =", Number(input[1]));
-  //ctrl + D로 close 이벤트 트리거
-  rl.close();
+  str = input[0];
+  // length 속성으로 반복 횟수 설정
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+  }
 });

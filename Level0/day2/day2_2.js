@@ -1,3 +1,5 @@
+// 문자열 붙여서 출력하기
+
 const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
@@ -9,8 +11,8 @@ let input = [];
 rl.on("line", function (line) {
   input = line.split(" ");
 }).on("close", function () {
-  str = input[0];
-  n = Number(input[1]);
-  // repeat(count) => 문자열을 주어진 횟수만큼 반복해 붙인 문자열 출력
-  console.log(str.repeat(n));
+  str1 = input[0];
+  str2 = input[1];
+  str3 = input[0] + input[1];
+  console.log(str3);
 });
