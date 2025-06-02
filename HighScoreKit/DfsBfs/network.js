@@ -1,5 +1,6 @@
 // lv3_네트워크
 
+// DFS 방식
 function solution(n, computers) {
   //방문 여부를 꼭 체크해줘야 함.
   var visit = [false];
